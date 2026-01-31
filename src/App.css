@@ -1,0 +1,283 @@
+#section_facilities {
+  position: relative;
+  padding: 80px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Background Curve Decoration */
+#section_facilities::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 900px;
+  height: 500px;
+  border-radius: 500px;
+  position: absolute;
+  opacity: 0.75;
+  top: 80px;
+  background-image: linear-gradient(144deg, rgb(179, 229, 252) 0%, rgb(200, 230, 201) 100%);
+  right: -250px;
+  transform: rotate(-30deg);
+
+}
+
+
+#section_facilities::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 700px;
+  top: 50px;
+  right: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(179, 229, 252);
+  position: absolute;
+}
+
+
+#section_facilities .facilities_wrapper {
+  display: flex;
+  /* Restore Flexbox */
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  /* Match title height */
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+  /* Clip the large shape if it overflows */
+}
+
+/* Slider Section (Left) - Absolute Full Width */
+#section_facilities .carousel_handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Fill height */
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure Slick Slider Fills Container */
+#section_facilities .slick-slider,
+#section_facilities .slick-list,
+#section_facilities .slick-track {
+  width: 100%;
+}
+
+#section_facilities .slide_wrapper {
+  padding: 0 10px;
+  /* Gap between slides */
+  box-sizing: border-box;
+  width: auto !important;
+}
+
+#section_facilities .slick-slide {
+  width: auto !important;
+}
+
+
+#section_facilities .slide_card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+  position: relative;
+  width: 240px;
+  /* Fixed width as requested */
+  height: 380px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#section_facilities .slide_card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#section_facilities .slide_card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 0 0 50px 0;
+  margin-bottom: 24px;
+}
+
+#section_facilities .card_content {
+  padding: 0 24px;
+}
+
+#section_facilities .card_content h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000000de;
+  margin: 0 0 16px 0;
+}
+
+#section_facilities .card_content p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #0000008a;
+  line-height: 1.5;
+  height: 72px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#section_facilities .detail_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 43px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 20px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+#section_facilities .detail_btn:hover {
+  background-color: #43a047;
+}
+
+/* Floating Title Section (Right) - Decorative Shape */
+#section_facilities .floating_title {
+  position: relative;
+  flex: 0 0 400px;
+  /* Increased to accommodate curve */
+  width: 400px;
+  height: 600px;
+  /* Fixed height for consistent shape */
+  background-color: transparent;
+  /* Light Blue Shape */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  /* Push content inward */
+  padding-right: 20px;
+  margin-right: 450px;
+  z-index: -1;
+}
+
+#section_facilities .title_content {
+  position: relative;
+
+}
+
+#section_facilities .icon_deco {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+  z-index: -1;
+
+}
+
+#section_facilities .library_icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Decorating circles near the icon would go here if using pseudo-elements */
+
+#section_facilities h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  /* 48px */
+  font-weight: 900;
+  color: #01579b;
+  /* Deep Blue Title */
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+}
+
+#section_facilities .nav_arrows {
+  display: flex;
+  gap: 16px;
+  z-index: 2;
+  position: absolute;
+  bottom: 25px;
+  /* left: 0; */
+  width: 700px;
+  margin-left: auto;
+}
+
+#section_facilities .nav_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e0e0e0;
+  color: rgb(1, 87, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 0.3s;
+}
+
+#section_facilities .nav_btn:hover {
+  background-color: #f5f5f5;
+}
+
+#section_facilities .nav_btn svg {
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  #section_facilities::before {
+    width: 100%;
+    height: 60%;
+    top: auto;
+    bottom: 0;
+    border-radius: 0;
+    border-top-left-radius: 200px;
+  }
+
+  #section_facilities .facilities_wrapper {
+    flex-direction: column-reverse;
+  }
+
+  #section_facilities .carousel_handle {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #section_facilities .floating_title {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #section_facilities .nav_arrows {
+    justify-content: center;
+  }
+}
