@@ -312,16 +312,16 @@
 #section_ask_doctors .ask_doctors_wrapper {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1176px;
   margin: 0 auto;
   display: flex;
-  padding: 0 20px;
+  padding: 0 24px;
   gap: 50px;
 }
 
 /* --- Sidebar (Left) --- */
 #section_ask_doctors .ask_sidebar {
-  flex: 0 0 250px;
+  flex: 0 0 172px;
   padding-top: 50px;
 }
 
@@ -351,6 +351,7 @@
   cursor: pointer;
   transition: all 0.3s;
   text-align: left;
+  width: 100%;
 }
 
 #section_ask_doctors .filter_btn:hover {
@@ -378,14 +379,12 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   /* Soft shadow */
-  padding: 20px;
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
 }
 
 #section_ask_doctors .doctor_card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -402,31 +401,35 @@
   border-radius: 12px;
   /* Rounded square/squircle */
   object-fit: cover;
+  border-radius: 0 50% 50% 50%;
+  margin-top: -8px;
+  margin-left: -8px;
 }
 
 #section_ask_doctors .doctor_info h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 400;
   color: #333;
   margin: 0 0 5px 0;
 }
 
 #section_ask_doctors .doctor_info p {
-  font-size: 0.9rem;
-  color: #777;
-  margin: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
 }
 
 #section_ask_doctors .card_divider {
   height: 1px;
   background-color: #eee;
-  margin-bottom: 20px;
+  padding: 0 16px;
 }
 
 #section_ask_doctors .card_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
 }
 
 #section_ask_doctors .doctor_stats {

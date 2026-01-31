@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaThumbsUp, FaBriefcase } from 'react-icons/fa';
+import Img1 from '/images/ask_doctor/f1_bep9vx.jpg';
 
 const doctorsData = [
     {
@@ -9,7 +10,7 @@ const doctorsData = [
         rating: '95%',
         experience: '4 Years',
         category: 'Pediatric',
-        image: 'https://i.pravatar.cc/150?img=1'
+        image: Img1
     },
     {
         id: 2,
