@@ -127,10 +127,10 @@ export default function SectionFacilities() {
                 </div>
 
                 <div className="nav_arrows">
-                    <button onClick={() => sliderRef.current.slickPrev()} className="nav_btn prev">
+                    <button onClick={() => sliderRef.current.slickNext()} className="nav_btn prev">
                         <FaArrowLeft />
                     </button>
-                    <button onClick={() => sliderRef.current.slickNext()} className="nav_btn next">
+                    <button onClick={() => sliderRef.current.slickPrev()} className="nav_btn next">
                         <FaArrowRight />
                     </button>
                 </div>
